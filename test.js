@@ -195,8 +195,3 @@ console.log(needHelp())
 
 
 
-// save is probabilties of all letters at each positions.
-// now delete all probablities in gray using removesMissing()
-// run for loop through feedback and add each gray letter to array,   ||   loop through new gray array while calling removesMissing()
-// delete every word with gray letter
-// once deleted get yellows which position array has higher count for yellow letter  || delete every word missing yellow
