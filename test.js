@@ -70,7 +70,7 @@ feedback.forEach((element) => {
 }
 })
 
-console.log(someWhat)
+
 
 function reduceArr(sub){
     let something = sub.filter(subb => !subb.includes(notGood[0]) && !subb.includes(notGood[1]) && !subb.includes(notGood[2]) && !subb.includes(notGood[3]))
@@ -79,8 +79,8 @@ function reduceArr(sub){
 
 
 
-console.log(reduceArr(wordsArr))
-console.log(subArr)
+reduceArr(wordsArr)
+
 
 
 function closerArr(yel){
@@ -88,12 +88,11 @@ function closerArr(yel){
     closestArr.push(...closer)
 }
 
-console.log(closerArr(subArr))
-console.log(closestArr)
+closerArr(subArr)
+
 let save = probs(wordsArr)
 let minus = probs(closestArr)
-console.log(save)
-console.log(minus)
+
 
 let avg1 = []
 let avg2 = []
@@ -101,7 +100,6 @@ let avg3 = []
 let avg4 = []
 let avg5 = []
 
-console.log(minus[1].posTwo.keys())
 
 function reassign(map1){
     if(map1[0].posOne){
@@ -121,8 +119,7 @@ function reassign(map1){
     }
 }
 
-console.log(reassign(minus))
-console.log(avg1, avg2, avg3, avg4, avg5)
+reassign(minus)
 
 let together = []
 let together2 = []
@@ -179,19 +176,12 @@ function verify(map1){
 }
 }
 
-console.log(verify(save))
-// 
+verify(save)
+ 
 
 function needHelp(){
 
-console.log(together)
-console.log(together2)
-console.log(together3)
-console.log(together4)
-console.log(together5)
+    return [ together , together2 , together3 , together4 , together5 ]
 }
 
 console.log(needHelp())
-
-
-
